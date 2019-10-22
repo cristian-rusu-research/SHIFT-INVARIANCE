@@ -16,6 +16,7 @@ Starting points:
 
 TestCirc.m - Tests all the C-DLA, Conv-DLA, Wavelet-like algorithms from the paper on image data.
 TestUCirc.m - Tests all the union of circulant algorithms from the paper on image data.
+TestECG.m - Tests UConv-DLA-SU on ECG data.
 
 --------------------------------
 
