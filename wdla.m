@@ -121,7 +121,7 @@ for k = 1:K
         ybar = vec(Y - Wa2*Xbar2);
 
         F = 1/sqrt(the_size)*dftmtx(the_size);
-        V = transp(kron(eye(2), F(:, 1:2:end))*Xbar1);
+        V = transpose(kron(eye(2), F(:, 1:2:end))*Xbar1);
         B = Wa1*F';
 
         clear Wa Wb;

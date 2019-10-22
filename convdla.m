@@ -64,13 +64,13 @@ for k = 1:steps
 
     %% new dictionary
     v = zeros(p,1);
-    v(1) = XF(1, :)*transp(cIF(1, :));
+    v(1) = XF(1, :)*transpose(cIF(1, :));
     for j = 2:round(p/2)
-        v(j) = conj(XF(j, :))*transp(cIF(j, :));
+        v(j) = conj(XF(j, :))*transpose(cIF(j, :));
         v(p-j+2) = conj(v(j));
     end
     if (mod(p,2) == 0)
-        v(p/2 + 1) = XF(p/2+1, :)*transp(cIF(p/2+1, :));
+        v(p/2 + 1) = XF(p/2+1, :)*transpose(cIF(p/2+1, :));
     end
     v = ifft(v); v = v(1:n); v = v/norm(v);
     

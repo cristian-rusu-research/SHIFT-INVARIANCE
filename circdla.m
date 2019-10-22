@@ -53,7 +53,7 @@ for k = 1:steps
     sigma(1) = thenorms(1)^(-1)*real(XF(1, :))*real(cIF(1, :))';
     
     for j = 2:round(m/2)
-          sigma(j) = conj(XF(j,:))*transp(cIF(j,:))/(thenorms(j));
+          sigma(j) = conj(XF(j,:))*transpose(cIF(j,:))/(thenorms(j));
           sigma(m-j+2) = conj(sigma(j));
     end
 
