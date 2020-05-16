@@ -1,6 +1,6 @@
 function [A, S, errors, time] = ucircdlablock(Y, k0, L)
 %UCDLA - Union of Ciculant Dictionary Learning - A proof of concept implementation of the
-% UCDLA.
+% UCDLA from Explicit shift-invarint dictionary learning by C. Rusu, B. Dumitrescu and S. Tsaftaris (2014).
 %
 % [A errors time S] = UCIRCDLABLOCK(Y, k0, L)
 %
