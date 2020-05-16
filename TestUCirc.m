@@ -69,7 +69,7 @@ end
 Y = Y(:, randsample(N, N));
 
 %% call UC-DLA
-[Q2, S, errorQ2, timeQ2] = ucircdla(Y, k0, L);
+[Q2, S, errorQ2, timeQ2] = ucircdlablock(Y, k0, L);
 [Q2su, Ssu, errorQ2su, timeQ2su] = ucircdlasu(Y, k0, L);
 plot(errorQ2)
 hold on; plot(errorQ2su, 'r')
